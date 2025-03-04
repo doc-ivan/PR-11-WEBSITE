@@ -1,0 +1,264 @@
+.content {
+  transform: translateY(-20px); /* Nagsisimula sa taas */
+  animation: slideDown 0.6s ease-out forwards;
+}
+@keyframes slideDown {
+  from {
+      transform: translateY(-20px);
+  }
+  to {
+      transform: translateY(0);
+  }s
+}
+
+body {
+  margin: 0;
+  font-family: "Sour Gummy", serif;
+  background: rgb(255,236,218);
+  background: radial-gradient(circle, rgba(255,236,218,1) 0%, rgba(254,254,254,1) 100%);
+}
+.content {
+  margin: 10.5vw  4.167vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4.167vw ;
+}
+.navbar-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 0.833vw 0px;
+  display: flex;
+  gap: 41.667vw;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+.navbar-div a {
+  color: white;
+  text-decoration: none;
+  padding: 0.833vw 1.25vw;
+}
+.navbar-div a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+.nav-links {
+  display: flex;
+}
+.logo {
+  width: auto;
+  height: 6.667vw ;
+}
+.about-us {
+  border-bottom: 0.25vw solid orange;
+  font-weight: bold;
+}
+.about-us-container {
+  display:flex ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55vw;
+  min-height: 50vw;
+  gap: 2vw;
+}
+.about-us-font-style {
+  font-size: 1.5vw;
+}
+.about-logo {
+  display: grid ;
+  grid-template-columns: repeat(2, 10vw);
+  grid-template-rows: repeat(1, 10vw);
+  justify-content: start;
+  align-items: start;
+  width: 55vw;
+  height: auto;
+  gap: 30vw;
+}
+.about-logo-paragraph {
+  width: 40vw;
+  height: auto;
+}
+.our-logo {
+  width: auto;
+  height: 5vw;
+}
+footer {
+  background: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 4.167vw ;
+  margin-top: auto;
+}
+footer a {
+  color: #f4f4f4;
+  text-decoration: none;
+  margin: 0px  0.833vw;
+}
+
+@media (max-width: 768px) {
+
+  .navbar-div {
+    padding: 1.30vw 0px;
+    gap: 42.97vw;
+  }
+  .navigation-button {
+    font-size: 1.46vw ;
+  }
+  .navbar-div a {
+    color: white;
+    text-decoration: none;
+    padding: 1.04vw 1.30vw;
+  }
+  .logo {
+    width: auto;
+    height: 6.51vw;
+  }
+  .about-us {
+    border-bottom: 0.5vw solid orange;
+    font-weight: bold;
+  }
+  .content {
+    margin-top: 15.02vw;
+    margin-bottom: 20vw;
+    margin-left: 6.51vw;
+    margin-right: 6.51vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4.56vw ;
+  }
+  .about-us-container {
+    display:flex ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65vw;
+    min-height: 50vw;
+    gap: 2vw;
+  }
+  .about-us-font-style {
+    font-size: 2.5vw;
+  }
+  .about-logo {
+    display: grid ;
+    grid-template-columns: repeat(2, 10vw);
+    grid-template-rows: repeat(1, 10vw);
+    justify-content: start;
+    align-items: start;
+    width: 65vw;
+    height: auto;
+    gap: 40vw;
+  }
+  .about-logo-paragraph {
+    width: 50vw;
+    height: auto;
+  }
+  .our-logo {
+    width: auto;
+    height: 9vw;
+  }
+  .copyright {
+    font-size: 1.43vw;
+  }
+  footer {
+    padding: 2.604vw;
+    margin-top: auto;
+  }
+  footer a {
+    margin: 0px 1.042vw;
+    font-size: 1.433vw;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-div {
+    padding: 2vw 1vw;
+    gap: 19.46vw;
+  }
+  .navigation-button {
+    font-size: 2.5vw;
+  }
+  .navbar-div a {
+    color: white;
+    text-decoration: none;
+    padding: 1.21vw 1.95vw ;
+  }
+  .logo {
+    width: auto;
+    height: 8vw ;
+  }
+  .about-us {
+    border-bottom: 0.5vw solid orange;
+    font-weight: bold;
+  }
+  .content {
+    margin-top: 20vw;
+    margin-bottom: 70vw;
+    margin-left: 6.51vw;
+    margin-right: 6.51vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4.56vw ;
+  }
+  .about-us-container {
+    display:flex ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65vw;
+    min-height: 50vw;
+    gap: 10vw;
+  }
+  .about-us-font-style {
+    font-size: 4.5vw;
+  }
+  .about-logo {
+    display: grid ;
+    grid-template-columns: repeat(2, 10vw);
+    grid-template-rows: repeat(1, 10vw);
+    justify-content: start;
+    align-items: start;
+    width: 65vw;
+    height: auto;
+    gap: 40vw;
+  }
+  .about-logo-paragraph {
+    width: 50vw;
+    height: auto;
+  }
+
+  .our-logo {
+    width: auto;
+    height: 15vw;
+  }
+  .copyright {
+    font-size: 2.5vw;
+    margin-top: 1vw;
+    margin-bottom: 0px;
+  }
+  footer {
+    padding: 2vw;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0vw;
+  }
+  p {
+    margin: 0px;
+    margin-bottom: 1vw;
+  }
+  footer a {
+    margin: 0px  0vw;
+    font-size: 2.5vw;
+  }
+}
