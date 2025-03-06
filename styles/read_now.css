@@ -237,7 +237,10 @@ footer a {
     font-weight: bold;
   }
   .content {
-    margin: 21.41vw 12.17vw;
+    margin-bottom: 130vw;
+    margin-top: 25vw;
+    margin-left: 12.17vw;
+    margin-right: 12.17vw;
     display: flex;
     align-items: center;
     flex-direction: column;
